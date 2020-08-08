@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML jegyzetek</title>
+</head>
+
+<body>
+    <h1>Kéktúrám fényképekkel.</h1>
+    <p>
+        <em>Az em elem a tartalmát, hangsúlyozottan, kiemelt szövegként jeleníti meg.</em>
+    </p>
+    <p>
+        <strong>The strong elem is szövegek formázására való. Ez egy fontosabb szövegrészletet határoz meg.</strong>
+    </p>
+    <p> Chrome DevTools segít neked abban, hogy át tudd tekinteni az alkalmazásod felépítését, vagy mag tudd keresni a
+        hibákat. Ha hibásan működik valami, semmiképp sem szabad megijedni. Meg kell nyitni a megfelelő fejlesztőeszközt
+        és megkeresni a hiba forrását. A hibákból mindig tanulunk valamit, így azok hasznosak a számunkra.</p>
+    <p>
+        URL - Uniform Resource Locator
+        A tartalmak az interneten bárhol lehetnek. Hogyan találjuk meg őket? Ehhez kell az URL, ha ismerjük az adott
+        oldal vagy kép vagy film vagy bámi URL-jét, akkor a böngészőbe beírva meg tudod nézni vagy le tudod tölteni.
+
+        Fontos, hogy minden erőforrásnak legyen egyedi azonosítója. Erre való az URL.
+    </p>
+    <p>
+        Az URL részei
+        Egy példa: https://www.training360.com/tanfolyami-naptar
+
+        A https a használandó protokoll. A protokoll neve után kettőspont (:) írandó.
+        A training360.com a célgép tartományneve. Ez elé két perjel (//) írandó.
+        A 443 a célgép azon hálózati portszáma, amin kérésünket várja; ez elé kettőspont (:) írandó. Ezt a részt gyakran
+        teljesen elhagyhatjuk, például esetünkben a HTTPS protokoll alapértelmezett portszáma a 443.
+        A /tanfolyami-naptar a kért elérési út a célgépen. Ez a rész mindig a perjellel (/) kezdődik.
+    </p>
+    <p>
+        <strong>Listák</strong>
+    </p>
+    <p>
+        Felsorolások megjelenítésére használhatod.
+    </p>
+    <p>
+        UL - Unordered List
+        Elem: ul
+        Lista elemei: li
+    </p>
+    <ul>
+        <li>a</li>
+        <li>b</li>
+        <li>c</li>
+    </ul>
+    <p>
+        OL - Ordered List
+        Elem: ol
+        Lista elemei: li
+    </p>
+    <ol>
+        <li>a</li>
+        <li>b</li>
+        <li>c</li>
+    </ol>
+
+    <p>
+        Dokumentáció
+        <a target="blank" href="https://www.w3schools.com/tags/tag_ul.asp">1</a>
+        <a target="blank" href="https://www.w3schools.com/tags/tag_ol.asp">2</a>
+        <a target="blank" href="https://www.w3schools.com/tags/tag_dl.asp">3</a>
+    </p>
+    <p>
+        <strong>Image elem</strong>
+    </p>
+    <p>
+        Elem: img
+    </p>
+    <p>
+        Képek megjelenítésére való. Self closed elem, azaz a végére nem kell másik img tag. Az src attribútum adja meg,
+        hogy honnan kerüljön a kép betöltésre.
+
+        A képek méretezése és alakítása már kicsit bonyolultabb dolog, amikor a CSS formázásokat vesszük, majd kitérek
+        rá.
+    </p>
+    <p>
+        Dokumentáció: <a target="blank" href="https://www.w3schools.com/tags/tag_img.asp">Link</a>
+    </p>
+    <img width="1280" src="img/html5_cheat_sheet_tags.png" alt="html parancsok">
+    <p>
+        <strong>Anchor elem</strong>
+    </p>
+    <p>
+        Elem: a /a
+    </p>
+    <p>
+        href: az URL, ahová kattintás után jutsz.
+    </p>
+    <p>
+        Dokumentáció <a target="blank" href="https://www.w3schools.com/tags/tag_a.asp">link</a>
+    </p>
+    <p>
+        Az XML jellegű struktúrák lényege, hogy az elemeket egymásba lehet ágyazni. Így már beszélhetünk szülő és
+        gyermek elemekről, aszerint, hogy melyik elem melyikbe van beágyazva.
+    </p>
+    <p>
+        Dokumentáció <a target="blank" href="https://www.w3schools.com/html/html_elements.asp">link</a>
+    </p>
+    <p>
+        <strong>Table elem</strong> <br> Elem: table <br> A táblázatokat strukturált adatokhoz használjuk. Vannak sorok,
+        oszlopok, <br> és általában ugyanazok az adatok szerepelnek minden sorban.
+        <br> Dokumentáció: <a target="blank" href="https://www.w3schools.com/html/html_tables.asp">Link</a>
+    </p>
+
+    <table>
+        <caption>példa táblázat</caption>
+        <thead>
+            <tr>
+                <th>a</th>
+                <th>b</th>
+                <th>c</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>1</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>3</td>
+                <td>1</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3"> 
+                    xyz
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+    <p>
+        <strong>Rowspan és Colspan</strong> <br> A nevükből adódóan sorok és oszlopok összevönására valók. <br> Ezek
+        attribútumok, tehát nem önálló elemek, hanem a td vagy a th elem tulajdonságai.
+    </p>
+    <p> 
+        Dokumentáció: <a target="blank" href="https://www.w3schools.com/tags/att_td_rowspan.asp">link 1</a> <a target="blank" href="https://www.w3schools.com/tags/att_td_colspan.asp">link 2</a>
+    </p>
+    <p>
+        <strong>Publikálás</strong>
+    </p>
+    <p>Ahhoz, hogy az emberek meg tudják nézni a webalkalmazásodat, szerverre van szükséged. <br> Ha ilyennel nem rendelkezel, használhatsz felhő szolgáltatást is, sok cég kínál ingyenes tárhelyet. <br> Mi a github pages nevűt használjuk a videóban, de lényeges különbség nincs közöttük abból a szempontból, <br> hogy fel kell tölteni a fájlokat és rájuk mutatni egy URL-lel, <br> ezután az emberek elérik az alkalmazást.</p>
+    <p>
+        Dokumentáció: <a target="blank" href="https://help.github.com/en/github/working-with-github-pages">link</a>
+    </p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+
+</body>
+
+</html>
